@@ -1,0 +1,928 @@
+
+body { font-family: 'Open Sans', sans-serif;
+ font-weight: normal;
+  font-style: normal;
+   font-size: 14px;
+    line-height: 24px;
+    background-color: #1a1a1a;
+     
+overflow-x: hidden; }
+/*...................................................................................
+...................................................................................
+................................NAVBAR.............................................
+...................................................................................
+...................................................................................*/
+
+.navbar{
+margin-bottom: 0;
+border-radius: 0;
+background-color:#1a1a1a; 
+color: #fff;
+padding: 1% 0;
+font-size: 1.2em;
+border: 0;
+
+
+}
+.navbar-brand{
+  float:left;
+  min-height: 5px;
+  padding: 0 15px 5px;
+}
+.navbar-brand img{
+  height: 50px;
+  border-radius: 50%;
+
+}
+#myNavbar{
+
+  background-color: #1a1a1a;
+  
+  border: 0;
+
+
+}
+
+#myNavbar a{
+  color:white;
+  text-align: center;
+font-family: 'Blinker', sans-serif;
+
+
+}
+#myNavbar li{
+  padding-left: 10px;
+}
+
+.navbar-inverse .navbar-nav .active a,.navbar-inverse .navbar-nav .active a:focus,.navbar-inverse .navbar-nav .active a:hover{
+  color: #fff;
+  background-color: #fa7b80;
+}
+
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  
+  position: absolute;
+  background: #fa7b80;
+  transition: width 0.2s ease 0s, left 0.5s ease 0s;
+  color: #fa7b80;
+  width: 0;
+}
+a:hover:after { 
+  width: 90%; 
+  left: 0%; 
+}
+a:hover,.active
+{
+  color:#fa7b80; 
+
+}
+
+/*
+................................................................................
+................................................................................
+....................................HOME........................................
+................................................................................
+................................................................................*/
+.homep img{
+  width: 800px;
+  height: 450px;
+  position: relative;
+  left: 255px;
+  top: 20px;
+  transition-timing-function: ease-in-out;
+  transition: 1s;
+}
+.homep img:hover
+{
+     width: 850px;
+     height: 500px;
+     
+     top: 7px;
+     left:350px;
+
+}
+.homep img:hover:after
+{
+  width: 800px;
+  height: 560px;
+  position: relative;
+  left: 350px;
+  top: 50px;
+  
+}
+.buttons_ban a
+{
+font-family: 'Blinker', sans-serif;
+border-style: solid;
+border-color: #fa7b80;
+color: white;
+border-radius: 20px;
+position: relative;
+left: 5px;
+top: 0px;
+padding: 10px; 
+text-align: center;
+text-decoration: none;
+transition: 0.5s ;
+
+}
+ .buttons_ban a:hover
+{
+  background-color: #fa7b80;
+  color: black;
+
+  
+}
+.info
+{
+font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  top: 60px;
+
+}
+#button_banner{
+
+position: relative;
+  left: 0%;
+
+text-align: center;
+}
+
+
+
+
+
+/*###########        about    ##########
+*/
+
+
+
+.section-1 {
+  padding: 20vmin 0vmin;
+  margin-top: 50px;
+}
+
+.section-1 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+  position: absolute;
+  top: 10vmin;
+  left: -18vmin;
+  background: white;
+  border-radius: 3px;
+  text-align: left;
+  padding: 13vmin 5vmin 20vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  font-family: var(--Rubik);
+  z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.5);
+}
+/*....................................................................................
+....................................................................................
+......................................RESPONSIVE.NAV...............................
+....................................................................................
+....................................................................................*/
+
+.menu1, .menu2, .menu3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  color: white;
+  position: relative;
+  
+  left:88%;
+  display: none;
+  z-index: 2000;
+ 
+  
+  cursor: pointer;
+
+}
+.popup {
+  background: white;
+  position: relative;
+  left: 22%;
+  height: 410px;
+  top: -400px;
+  width: 200px;
+  color: #4a4a4a;
+  border-radius: 15px;
+  padding: 1%;
+  cursor: pointer;
+  text-align: center;
+  visibility: hidden;
+  
+  z-index: 2000;
+  
+  }
+
+
+.popup .popuptext {
+ 
+  text-align: center;
+  font-family: Helvetica,Arial,sans-serif;
+  background-color: white;
+  z-index: 2000;
+
+}
+/*Styling of popup navigation bar*/
+.it li{
+  list-style-type: none;
+  padding: 5px;
+  text-align: center;
+}
+ .it li:hover{
+  background: #fa7b80;
+  color: white;
+  border-radius: 25px;
+  
+  text-align: center;
+}
+
+
+
+/* Toggle this class - hide and show the popup */
+ .show .popup   {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  z-index: 100;
+}
+
+
+
+/*..........................................................................
+..........................................................................
+..................................SCHDULE...................................
+............................................................................
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+
+                                 /*s1*/
+.mainsch{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin: 10px;
+}
+.mainsch> div
+{
+  margin: 10px;
+  align-self: center;
+}
+.Schdule .s1
+{
+  width: 260px;
+  height: 590px;
+  font-family: 'Dancing Script', cursive;
+
+   background-color: black;
+color: white;
+position: relative;
+top: -180px;
+font-size: 2em;
+    text-align: center;
+  
+
+
+}
+.Schdule .s1:hover
+{
+  background-color:#fa7b80;
+   transition-timing-function: ease;
+  transition: 0.5s;
+
+}
+.Schdule .s1 .dot1 {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: -35px;
+  opacity: .5;
+
+}
+.Schdule .s1 .dot1:after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border-radius: 50%;
+  background: #DCDCDC;
+  opacity: .2;
+  z-index: -1;
+  padding:0px;
+  margin:0px;
+}
+.Schdule .s1 .s1sh
+{
+  font-size: 0.8em;
+}
+.Schdule .s1 .det1
+{
+  font-size: 0.6em;
+}
+
+                                          /*s2*/
+.Schdule .s2
+{
+  width: 260px;
+  height: 590px;
+   background-color: black;
+   font-family: 'Dancing Script', cursive;
+
+color: white;
+position: relative;
+top: -180px;
+font-size: 2em;
+    text-align: center;
+
+
+}
+.Schdule .s2:hover
+{
+  background-color:#fa7b80;
+   transition-timing-function: ease;
+  transition: 0.5s;
+
+}
+.Schdule .s2 .dot1 {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: -35px;
+  opacity: .5;
+
+}
+.Schdule .s2 .dot1:after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border-radius: 50%;
+  background: #DCDCDC;
+  opacity: .2;
+  z-index: -1;
+  padding:0px;
+  margin:0px;
+}
+.Schdule .s2 .s2sh
+{
+  font-size: 0.8em;
+}
+.Schdule .s2 .det2
+{
+  font-size: 0.6em;
+}
+
+                                       /*s3*/
+ .Schdule .s3
+{
+  width: 260px;
+  height: 590px;
+   background-color: black;
+   font-family: 'Dancing Script', cursive;
+
+color: white;
+position: relative;
+top: -180px;
+font-size: 2em;
+    text-align: center;
+
+
+}
+.Schdule .s3:hover
+{
+  background-color:#fa7b80;
+   transition-timing-function: ease;
+  transition: 0.5s;
+
+}
+.Schdule .s3 .dot1 {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: -35px;
+  opacity: .5;
+
+}
+.Schdule .s3 .dot1:after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border-radius: 50%;
+  background: #DCDCDC;
+  opacity: .2;
+  z-index: -1;
+  padding:0px;
+  margin:0px;
+}
+.Schdule .s3 .s3sh
+{
+  font-size: 0.8em;
+}
+.Schdule .s3 .det3
+{
+  font-size: 0.6em;
+}
+                                    /*s3*/
+.Schdule .s4
+{
+  width: 260px;
+  height: 590px;
+   background-color: black;
+   font-family: 'Dancing Script', cursive;
+
+position: relative;
+top: -180px;
+font-size: 2em;
+    text-align: center;
+
+
+}
+.Schdule .s4:hover
+{
+  background-color:/*rgba(225,0,0,0.9);*/#fa7b80;
+   transition-timing-function: ease;
+  transition: 0.5s;
+
+}
+.Schdule .s4 .dot1 {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: -35px;
+  opacity: .5;
+
+}
+.Schdule .s4 .dot1:after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border-radius: 50%;
+  background: #DCDCDC;
+  opacity: .2;
+  z-index: -1;
+  padding:0px;
+  margin:0px;
+}
+.Schdule .s4 .s4sh
+{
+  font-size: 0.8em;
+}
+.Schdule .s4 .det4
+{
+  font-size: 0.6em;
+}
+/*....................................................................................
+....................................................................................
+....................................FAQs............................................
+....................................................................................
+....................................................................................*/
+
+                             
+       .FAQs{
+        background: #fa7b80;
+        border-radius: 1%;
+        color: white;
+        width: 50%;
+        position: relative;
+        left:30%;
+           font-family: 'Dancing Script', cursive;
+       
+       }                      
+  
+   .quses .q1
+   {
+    margin-left: 5%;
+    background-color:  #fa7b80;
+
+    color:white;
+    border: none;
+    font-size: 1.5em; 
+   } 
+   .quses .ans
+   {
+    display: none;
+    background:  #fa7b80;
+    color: #1a1a1a;
+    padding:10px;
+    margin-left: 5%;
+    font-size: 1.4em;
+
+   } 
+  .ans.change
+   {
+    display: block;
+   } 
+   .line{
+    width: 1000px;
+    height: 1px;
+    color: red;
+    z-index: 2000;
+   }               
+
+
+/*
+/*.....................................................................................
+.....................................................................................
+...................................RESPONSIVENESS....................................
+.....................................................................................
+.....................................................................................*/
+
+
+
+
+@media screen and (max-width:1400px )
+{
+  /*.main-nav ul li a 
+  {
+    position: relative;
+    left:-70px;
+    z-index: 1000;
+
+  }*/
+  .homep img
+  {
+       
+       position: relative;
+
+       
+      
+  }
+  .buttons a
+  {
+    position: relative;
+    left: 400px;
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width:1300px )
+{
+  /*.main-nav ul li a 
+  {
+    position: relative;
+    left:-140px;
+    z-index: 1000;
+
+  }*/
+  .homep img
+  {
+       
+       position: relative;
+
+       left: 250px;
+  }
+  .buttons a
+  {
+    position: relative;
+    left: 300px;
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width:1200px )
+{
+  /*.main-nav ul li a 
+  {
+    position: relative;
+    left:-200px;
+    z-index: 1000;
+
+  }*/
+  .homep img
+  {
+       
+       position: relative;
+
+       left: 100px;
+  }
+  .main-nav ul li a 
+  {
+    display: none;
+
+  }
+.menu2,.menu3, .menu1 {
+  display:block;
+  top: 60px;
+}
+}
+@media screen and (max-width:1100px )
+{
+ /* .main-nav ul li a 
+  {
+    position: relative;
+    left:-200px;
+    z-index: 1000;
+
+  }*/
+  .homep img
+  {
+       
+       position: relative;
+
+       left: 90px;
+  }
+  .homep img:hover
+  {
+       
+       position: relative;
+       left: 90px;
+       
+       
+      
+  }
+  .main-nav ul li a 
+  {
+    display: none;
+
+  }
+.menu2,.menu3, .menu1 {
+  display:block;
+  top: 60px;
+}
+}
+@media screen and (max-width:1000px )
+{
+  /*.main-nav ul li a 
+  {
+    position: relative;
+    left:-320px;
+    z-index: 1000;
+
+  }*/
+  .homep img
+  {
+       
+       position: relative;
+
+       left: 80px;
+  }
+  .homep img:hover
+  {
+       
+       position: relative;
+       left: 80px;
+
+       
+      
+  }
+  .buttons a
+  {
+    position: relative;
+    left: 200px;
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width:900px )
+{
+  /*.main-nav ul li a 
+  {
+    position: relative;
+    left:-370px;
+    z-index: 1000;
+
+  }*/
+  .homep img
+  {
+       
+       position: relative;
+
+       left: 70px;
+       width: 700px;
+  }
+  .homep img:hover
+  {
+       
+       position: relative;
+       left: 70px;
+       width: 700px;
+       
+
+       
+      
+  }
+}
+@media screen and (max-width:800px )
+{
+  .main-nav ul li a 
+  {
+    display: none;
+
+  }
+  .homep img
+  {
+       
+       position: relative;
+
+       left: 0px;
+       width: 650px;
+  }
+  .homep img:hover
+  {
+       
+       position: relative;
+       left: 0px;
+       width: 650px;
+
+
+       
+      
+  }
+  .menu2,.menu3, .menu1 {
+  display:block;
+  top: 60px;
+  z-index: 2500;
+}
+.buttons a
+
+{
+  font-size: 0.8em;
+}
+}
+@media screen and (max-width:500px )
+{
+ .homep img
+  {
+       
+       position: relative;
+       width: 400px;
+       height: 300px; 
+
+       left: 0px;
+  }
+  .buttons a
+  {
+    position: relative;
+    left: 0px;
+    font-size: 0.5em;
+  }
+  .info
+  {
+    font-size: 1.4em;
+  }
+  .homep img:hover
+  {
+       
+       position: relative;
+       width: 400px;
+       height: 300px;
+left: 0px;
+       
+      
+  }
+
+
+}
+@media screen and (max-width:700px )
+{
+  .main-nav ul li a 
+  {
+    display: none;
+
+  }
+  .homep img
+  {
+       
+       position: relative;
+       width: 600px;
+       height: 400px; 
+
+       left: 0px;
+  }
+  .homep img:hover
+  {
+       
+       position: relative;
+
+       width: 600px;
+       height: 400px; 
+
+       left: 0px;
+
+       
+      
+  }
+  .buttons a
+  {
+    position: relative;
+    left: 10px;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width:600px )
+{
+  
+  .homep img
+  {
+       
+       position: relative;
+       width: 500px;
+       height: 400px; 
+
+       left: 0px;
+  }
+  .homep img:hover
+  {
+       
+       position: relative;
+        position: relative;
+       width: 500px;
+       height: 400px; 
+
+       left: 0px;
+
+       
+      
+  }
+  .buttons a
+  {
+    position: relative;
+    left: 0px;
+    font-size: 0.8em;
+  }
+
+  
+}
+@media screen and (max-width:500px )
+{
+  .homep img
+  {
+       
+       position: relative;
+       width: 450px;
+       height: 370px; 
+
+       left: -10px;
+  }
+  .homep img:hover
+  {
+       
+      position: relative;
+       width: 450px;
+       height: 370px; 
+
+       left: -10px;
+
+       
+      
+  }
+  .buttons a
+  {
+    position: relative;
+    left: 0px;
+    font-size: 0.75em;
+  }
+
+  }
+
+*/
